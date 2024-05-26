@@ -1,0 +1,236 @@
+
+ * {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; 
+}
+
+.container {
+    width: 60%;
+    height: 100%;
+    background-color: #7B3F00;
+    background: linear-gradient(black, #7B3F00 );
+    border: 4px solid #fcae1e;
+    padding: 5px 0 20px 0;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width:600px) {
+    body{
+        gap: 6px;
+    }
+    .container{
+        height: 80%;
+        margin-bottom: 37px;
+    }
+}
+
+.container h1 {
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    padding: 10px 0 20px 0;
+    font-family: 'Bungee Spice', cursive;
+}
+
+.form-css {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form-css  #inputText{
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s ease-in-out all;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px 0 10px;
+    border: 4px solid orange;
+    color: blue;
+    font-weight: 600;
+}
+
+.form-css #addClear{
+    width:35% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.form-css #addClear #addToDo{
+    width: 45%;
+    height: 40px;
+    background-color: green;
+    border-radius: 10px;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    font-style: italic;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+}
+
+
+.form-css #addClear #clearToDo{
+    width: 45%;
+    height: 40px;
+    background-color: red;
+    border-radius: 10px;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    font-style: italic;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width:750px) {
+    
+    .container h1 {
+        padding: 5px 0 5px 0;
+        font-weight: 300;
+        font-size: 30px;
+    }
+    .form-css {
+        flex-direction: column;
+        height: 90px;
+    }  
+    .form-css #inputText {
+         width: 75%; 
+    }
+    .form-css #addClear{
+        width:75% ;
+    
+    }
+}
+
+.form-css #addClear #addToDo:hover, 
+.form-css #addClear #clearToDo:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.3s ease all;
+    border-radius: 10px;
+    box-shadow: 0 0 10px orange;
+}
+
+@media only screen and (max-width:600px) {
+    
+    .form-css{
+        gap: 2px;
+    } 
+    .form-css #addClear{
+        height: 65px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-css #addClear #addToDo{
+        width: 100%;  
+        height: 35px;
+    }
+    .form-css #addClear #clearToDo{
+        width: 100%;
+        height: 35px;
+        
+    }
+    .container #toDoContainer {
+        overflow-x: scroll;
+        overflow: hidden visible;
+    }
+}
+
+
+.container #toDoContainer {
+    width: 80%;
+    height: 70%;
+    border: 4px solid orange;
+    margin: 30px auto;
+    overflow-y: scroll;
+    overflow: hidden visible;
+}
+
+
+
+
+
+@media only screen and (max-width:750px){
+    .container{
+        gap: 5px;
+    }
+    .container #toDoContainer {     
+        height: 60%;
+        margin-bottom: 30px auto;
+    }
+    .form-css #inputText{
+        height: 30px;
+    }
+}
+@media only screen and (max-height:650px){
+    .container{
+        
+    }
+    .container #toDoContainer {     
+        height: 40%;
+    }
+   
+}
+
+
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    background-color: #fcae1e;
+    box-shadow: 0 0 10px white inset;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #7B3F00;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color:blue;
+}
+::-webkit-scrollbar-corner{
+    background-color:rgb(255, 0, 204);
+}
+
+
+
+.paraghraph-styling {
+    width: 95%;
+    margin: 20px auto auto auto;
+    border: 4px solid orange;
+    color: rgb(215, 215, 243);
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+
